@@ -2,9 +2,10 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
 
-// https://vitejs.dev/config/
+// GitHub Pages project sites should use a relative base so assets resolve
+// correctly when the site is served from /<repo-name>/.
 export default defineConfig(({ mode }) => ({
-  base: "/jane-njuguna-github-pages-portfolio/",
+  base: "./",
   server: {
     host: "::",
     port: 8080,
